@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p class="lead">
+      The company "{{ info['name'] }}" under stock symbol "{{ info['symbol'] }}" is priced @ {{ info['price']|usd }}
+    </p>
+{% endblock %}
